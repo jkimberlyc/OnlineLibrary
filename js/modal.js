@@ -10,7 +10,32 @@
 //     }
 // }
 
+var btn = document.getElementById("confirmBtn");
+btn.disabled = true;
 document.getElementById("mastercard").checked = false;
+
+
+function validate() {
+    var fName = document.getElementById("firstName").value;
+    var lName = document.getElementById("lastName").value;
+    var contactNum = document.getElementById("contact").value;
+    var address = document.getElementById("address").value;
+    var country = document.getElementById("country").value;
+    var city = document.getElementById("city").value;
+    var zip = document.getElementById("zip").value;
+    var cardName = document.getElementById("cc-name").value;
+    var creditCardNumber = document.getElementById("cc-number").value;
+    var expCard = document.getElementById("cc-expiration").value;
+    var cvv = document.getElementById("cc-cvv").value;
+    var mastercard = document.getElementById("mastercard").checked;
+    var visa = document.getElementById("visa").checked;
+    var cod = document.getElementById("cod").checked;
+    var americanExpress = document.getElementById("americanExpress").checked;
+
+    if(((fName && lName && contactNum && address && country && city && zip && cardName && creditCardNumber && expCard && cvv) === "")
+    && (mastercard || visa || cod || americanExpress)) btn.disabled = true;
+    else btn.disabled = false;
+}
 
 
 

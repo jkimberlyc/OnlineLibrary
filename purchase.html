@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
     <title>Checkout | Moonstar Online Library</title>
 
     <script
@@ -42,9 +41,6 @@
       style="background-color: #9a8948"
     >
       <div class="container-fluid">
-        <!-- <a class="nav-link" href="#search"
-          ><i class="fa-solid fa-magnifying-glass"></i>
-        </a> -->
         <button
           class="navbar-toggler ms-auto"
           type="button"
@@ -58,10 +54,6 @@
           id="NavDropdown"
         >
           <ul class="navbar-nav nav-fill fs-5 text-warning">
-            <!-- <li class="nav-item"><a class="navbar-brand"><img src="moon.png" width="40px" height="40px"></a></li> -->
-            <li class="nav-item">
-              <!-- <span class="nav-link" href="#"><i class="fa-solid fa-moon"></i><span> -->
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -78,9 +70,6 @@
 
     <div class="container bg-white text-dark py-4">
       <div class="row p-4">
-        <!-- <div class="alert alert-warning" role="alert">
-          A simple warning alert—check it out!
-        </div> -->
         <div class="col-md-4 order-md-2 mb-4">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-muted">Your cart</span>
@@ -142,7 +131,7 @@
         </div>
         <div class="col-md-8 order-md-1">
           <h4 class="mb-3">Billing address</h4>
-          <form class="needs-validation" novalidate>
+          <form action="" method="" onchange="validate()">
             <div class="row">
               <div class="col-md-4 mb-3">
                 <label for="firstName">First name</label>
